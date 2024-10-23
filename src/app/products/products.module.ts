@@ -17,7 +17,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    PrimeNgModule
-  ]
+    PrimeNgModule,
+  ],
 })
 export class ProductsModule { }
