@@ -20,4 +20,15 @@ export class UncommonPageComponent {
     this.gender = 'female';
   }
 
+  // i18 Plural
+  public clients: string[] = ['Maria', 'Pedro', 'Fernando', 'Hernando', 'Eduardo'];
+  public clientsMap = {
+    '=0': 'No hay clientes papu, podes pasar',
+    '=1': 'Hay un cliente esperando, jodete namas tú boludo',
+    'other': 'Ostia tio chaval maquina toro, hay # clientes esperando =O'  
+  }
+
+  mandarALevantarCliente():void {
+    this.clients.shift();
+  }
 }
