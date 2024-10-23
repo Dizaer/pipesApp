@@ -20,7 +20,7 @@ export class UncommonPageComponent {
     this.gender = 'female';
   }
 
-  // i18 Plural
+  // i18 Plural && slice
   public clients: string[] = ['Maria', 'Pedro', 'Fernando', 'Hernando', 'Eduardo'];
   public clientsMap = {
     '=0': 'No hay clientes papu, podes pasar',
@@ -30,5 +30,12 @@ export class UncommonPageComponent {
 
   mandarALevantarCliente():void {
     this.clients.shift();
+  }
+
+  //keyValue Pipe && JSON
+  public person = {
+    name: 'Miguel Eduardo',
+    age: '17',
+    addres: 'la casa de obama'
   }
 }
